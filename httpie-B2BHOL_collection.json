@@ -14,17 +14,22 @@
       "color": "gray"
     },
     "auth": {
-      "type": "none"
+      "type": "basic",
+      "credentials": {
+        "username": "prudhvi.penmetsa@ibm.com",
+        "password": "gkc9VWE7peg.yxv*utf"
+      },
+      "target": "headers"
     },
     "requests": [
       {
         "name": "Create PO",
-        "url": "https://presalesnamtest.int-aws-us.webmethods.io/b2b/routes/channel/eca5932a-bf23-458e-b6e1-8a34afd58b39",
+        "url": "https://superipaashandsonlab.int-aws-de.webmethods.io/b2b/routes/channel/c353090c-2c16-4f0d-a63d-209c615f7ddd",
         "method": "POST",
         "headers": [
           {
             "name": "Message-ID",
-            "value": "xxxxxx",
+            "value": "12345_4",
             "enabled": true
           },
           {
@@ -34,12 +39,12 @@
           },
           {
             "name": "AS2-From",
-            "value": "xxxxxxxxx",
+            "value": "SENDER100",
             "enabled": true
           },
           {
             "name": "AS2-To",
-            "value": "987654321",
+            "value": "123456789",
             "enabled": true
           },
           {
@@ -52,11 +57,11 @@
         "pathParams": [],
         "auth": {
           "type": "basic",
+          "target": "headers",
           "credentials": {
-            "username": "txlab02user",
-            "password": "L0nd0n2025!"
-          },
-          "target": "headers"
+            "username": "snd100User",
+            "password": "B2bH0L042025!"
+          }
         },
         "body": {
           "type": "text",
@@ -64,7 +69,7 @@
             "name": ""
           },
           "text": {
-            "value": "ISA*00*          *00*          *01*xxxxxxxxx      *01*987654321      *161013*1141*U*00200*000000001*0*T*:! \nGS*PO*4405197800*999999999*20101127*1719*1421*X*004010! \nST*850*00010! \nBEG*01*BK*08292233294**20101127*610385385! \nREF*DP*038! \nREF*PS*R! \nITD*14*3*2**45**46! \nDTM*002*20101214! \nPKG*F*68***PALLETIZE SHIPMENT! \nPKG*F*66***REGULAR!TD5*A*92*P3**SEE XYZ RETAIL ROUTING GUIDE! \nN1*ST*XYZ RETAIL*9*0003947268292! \nN3*31875 SOLON RD! \nN4*SOLON*OH*44139! \nPO1*1*120*EA*9.25*TE*CB*065322-117*PR*RO*VN*AB3542! \nPID*F****SMALL WIDGET! \nPO4*4*4*EA*PLT94**3*LR*15*CT! \nCTT*1! \nAMT*1*1110! \nSE*18*00010! \nGE*1*1421! \nIEA*1*000000001!",
+            "value": "ISA*00*          *00*          *ZZ*PARTNER25      *ZZ*987654321      *161013*1141*U*00200*000000001*0*T*:!\nGS*PO*PARTNER25*987654321*20101127*1719*1421*X*004010!\nST*850*00010!\nBEG*01*BK*08292233294**20101127*610385385!\nREF*DP*038!\nREF*PS*R!\nITD*14*3*2**45**46!\nDTM*002*20101214!\nPKG*F*68***PALLETIZE SHIPMENT!\nPKG*F*66***REGULAR!TD5*A*92*P3**SEE XYZ RETAIL ROUTING GUIDE!\nN1*ST*XYZ RETAIL*9*0003947268292!\nN3*31875 SOLON RD!\nN4*SOLON*OH*44139!\nPO1*1*120*EA*9.25*TE*CB*065322-117*PR*RO*VN*AB3542!\nPID*F****SMALL WIDGET!\nPO4*4*4*EA*PLT94**3*LR*15*CT!\nCTT*1!\nAMT*1*1110!\nSE*18*00010!\nGE*1*1421!\nIEA*1*000000001!",
             "format": "text/plain"
           },
           "form": {
